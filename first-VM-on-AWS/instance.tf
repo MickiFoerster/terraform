@@ -15,8 +15,8 @@ resource "aws_instance" "example" {
 
   provisioner "remote-exec" {
     inline = [
-      "apt-get update",
-      "apt-get upgrade -y"
+      "sudo apt-get update",
+      "sudo apt-get upgrade -y"
     ]
   }
 
